@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* :root {
+  --row-column-blue: rgb(230, 247, 254);
+  --button-hover: rgb(208, 238, 250);
+  --button-active: rgb(176, 230, 252);
+  --gray-button-bg-color: rgb(236, 236, 236);
+  --gray-button-hover: rgb(222, 222, 222);
+  --gray-button-active: rgb(203, 203, 203);
+} */
+
+body {
+  font-size: 1.8rem;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
