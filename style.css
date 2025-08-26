@@ -67,7 +67,6 @@ img {
   height: 100%;
   width: 100%;
   position: absolute;
-  overflow: hidden;
   z-index: -1;
   transform: skewY(-30deg);
   bottom: 35%;
