@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-  --paragraph-text-color: rgb(100, 100, 100);
+  --paragraph-text-color: rgb(90, 90, 90);
   --header-footer-bg-color: rgb(1, 143, 174);
 }
 
@@ -58,26 +58,25 @@ img {
   display: block;
 }
 
-header {
-  padding: 20px;
-}
-
 .header-img-div {
-  padding: 12px;
   position: relative;
-  margin-bottom: 15px;
 }
 
 .background-color-div {
   background-color: var(--header-footer-bg-color);
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: absolute;
-  margin: -32px 0 0 -32px;
+  overflow: hidden;
   z-index: -1;
   transform: skewY(-30deg);
   bottom: 35%;
   box-shadow: 0 10px 10px -8px rgb(150, 150, 150);
+}
+
+.picture-div {
+  padding: 32px;
+  position: relative;
 }
 
 .header-img-div img {
@@ -88,21 +87,22 @@ header {
 header h1 {
   font-size: 6.5rem;
   position: absolute;
-  bottom: 16px;
-  left: 24px;
+  bottom: 36px;
+  left: 46px;
   color: white;
   text-shadow: 0 4px 6px black;
-  max-width: calc(100% - 48px);
+  max-width: calc(100% - 92px);
 }
 
 header > section {
   display: grid;
   gap: 12px;
   justify-content: center;
+  padding: 20px;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4.8rem;
   text-align: center;
 }
 
@@ -121,7 +121,94 @@ header > section > p {
 }
 
 header .icons-div img {
-  width: 35px;
+  height: 35px;
+}
+
+.project-div {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 65px;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.project-div > section {
+  height: 475px;
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  box-shadow: 1px 3px 8px 1px silver;
+  flex-grow: 1;
+  flex-basis: 325px;
+  max-width: 500px;
+}
+
+.project-image {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.8rem;
+  padding: 5px;
+}
+
+.project-1 > .project-image {
+  background-color: rgb(123, 113, 199);
+}
+
+.project-2 > .project-image {
+  background-color: rgb(215, 143, 49);
+}
+
+.project-3 > .project-image {
+  background-color: rgb(93, 142, 59);
+}
+
+.project-4 > .project-image {
+  background-color: rgb(205, 109, 160);
+}
+
+.project-5 > .project-image {
+  background-color: rgb(55, 152, 208);
+}
+
+.project-6 > .project-image {
+  background-color: rgb(155, 20, 20);
+}
+
+.project-description {
+  padding: 15px 25px;
+}
+
+.project-name-line {
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.project-icons-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-icons-div img {
+  height: 25px;
+}
+
+.project-description > p {
+  color: var(--paragraph-text-color);
 }
 
 footer {
@@ -131,12 +218,14 @@ footer {
 }
 
 footer > p {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   padding: 20px;
 }
 
 footer > section {
   padding: 20px;
+  font-size: 1.9rem;
+  font-weight: 375;
 }
 
 footer > section > div {
@@ -153,7 +242,7 @@ footer .icons-div {
 }
 
 footer .icons-div img {
-  width: 50px;
+  height: 50px;
 }
 
 footer img {
@@ -166,6 +255,12 @@ footer img {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 4.3rem;
   }
 }
+/* 
+@media (width >= 1308px) {
+  .project-div > section {
+    flex-grow: 0;
+  }
+} */
