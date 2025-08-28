@@ -128,7 +128,6 @@ header .icons-div img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 65px;
-  column-gap: 50px;
   justify-content: center;
 }
 
@@ -139,7 +138,7 @@ header .icons-div img {
   box-shadow: 1px 3px 8px 1px silver;
   flex-grow: 1;
   flex-basis: 325px;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .project-image {
@@ -315,7 +314,7 @@ footer > picture > img {
   } */
 
   header {
-    margin: 60px 50px 0px 50px;
+    margin: 60px 60px 0px 60px;
     border: 1px solid black;
     padding: 50px 20px 40px 20px;
     max-height: 380px;
@@ -331,7 +330,7 @@ footer > picture > img {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
 
   header h2 {
@@ -346,6 +345,37 @@ footer > picture > img {
 
   header .icons-div {
     display: none;
+  }
+
+  .project-div {
+    padding: 15px 50px;
+  }
+
+  .project-div {
+    column-gap: 30px;
+    row-gap: 55px;
+  }
+
+  .project-div > section {
+    height: 400px;
+    flex-basis: 300px;
+    max-width: 425px;
+  }
+
+  .project-image {
+    font-size: 3.2rem;
+  }
+
+  .project-name-line {
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .project-description > p {
+    font-size: 1.6rem;
   }
 
   footer {
@@ -394,6 +424,27 @@ footer > picture > img {
 
   footer .icons-div img {
     height: 30px;
+  }
+}
+
+@media (width >= 730px) {
+  main > h2 {
+    text-align: left;
+  }
+
+  main > h2,
+  .project-div {
+    padding: 0 50px;
+  }
+
+  .project-div > section {
+    height: 350px;
+  }
+}
+
+@media (700px <= width < 800px) {
+  footer > div > p {
+    padding: 25px 0 30px 0;
   }
 }
 
