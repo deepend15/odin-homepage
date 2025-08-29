@@ -28,6 +28,7 @@ body {
   font-variation-settings: "wdth" 100;
   display: grid;
   gap: 100px;
+  justify-items: center;
 }
 
 input,
@@ -270,63 +271,24 @@ footer > picture > img {
     visibility: hidden;
   }
 
-  /* header {
-    display: grid;
-    justify-items: center;
+  body {
+    gap: 50px;
   }
-
-  .picture-div {
-    padding: 10px;
-    position: absolute;
-    display: none;
-  }
-
-  .picture-div img {
-    max-width: 50%;
-    display: none;
-  }
-  
-  .tablet-float-div {
-    float:left;
-    width: 50%;
-    height: 50%;
-  }
-
-  header section {
-    max-width: 75%;
-    margin: 100px 0 0 0;
-    border: 1px solid black;
-    padding: 60px 20px 55px 20px;
-  }
-
-  h2 {
-    font-size: 2.8rem;
-  }
-
-  header h2 {
-    margin-bottom: 15px;
-  }
-
-  header p {
-    padding: 0;
-    font-size: 1.6rem;
-    margin-bottom: 0;
-  } */
 
   header {
-    margin: 60px 60px 0px 60px;
+    margin: 100px 0 0px 0px;
     border: 1px solid black;
-    padding: 50px 20px 40px 20px;
-    max-height: 380px;
+    padding: 45px 20px 40px 20px;
+    max-width: 75%;
   }
 
   .picture-div {
-    padding: 15px;
+    padding: 0;
     float: left;
-    max-width: 60%;
+    width: 250px;
     left: -55px;
-    top: -95px;
-    shape-outside: inset(10% 4.27% 24.03% 10%);
+    top: -120px;
+    shape-outside: inset(10% 13.63% 50.34% 10%);
   }
 
   h2 {
@@ -334,13 +296,15 @@ footer > picture > img {
   }
 
   header h2 {
-    margin-bottom: 15px;
+    font-size: 3.2rem;
+    margin-bottom: 25px;
   }
 
   header p {
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-bottom: 0;
+    line-height: 1.7;
   }
 
   header .icons-div {
@@ -379,6 +343,7 @@ footer > picture > img {
   }
 
   footer {
+    margin-top: 50px;
     padding: 40px 30px 55px 35px;
     display: flex;
     align-items: center;
@@ -428,6 +393,20 @@ footer > picture > img {
 }
 
 @media (width >= 730px) {
+  header {
+    padding: 70px 20px 20px 20px;
+  }
+
+  header h2 {
+    font-size: 3.4rem;
+  }
+
+  .picture-div {
+    width: 300px;
+    top: -145px;
+    shape-outside: inset(10% 8.76% 41.46% 10%);
+  }
+
   main > h2 {
     text-align: left;
   }
@@ -445,6 +424,18 @@ footer > picture > img {
 @media (700px <= width < 800px) {
   footer > div > p {
     padding: 25px 0 30px 0;
+  }
+}
+
+@media (width > 830px) {
+  header {
+    padding: 30px 20px 20px 20px;
+    max-width: 65%;
+  }
+
+  .picture-div {
+    top: -105px;
+    shape-outside: inset(10% 8.76% 30.29% 10%);
   }
 }
 
