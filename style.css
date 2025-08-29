@@ -284,7 +284,7 @@ footer > picture > img {
     display: block;
     background-color: var(--header-footer-bg-color);
     height: calc(100% + 100px);
-    width: 100vw;
+    width: 133.33%;
     position: absolute;
     z-index: -1;
     transform: skewY(-15deg);
@@ -303,12 +303,13 @@ footer > picture > img {
   }
 
   header h1 {
-    /* font-size: 6.5rem; */
-    /* bottom: 36px; */
-    /* left: 46px; */
-    /* text-shadow: 0 4px 6px black; */
-    /* max-width: calc(100% - 92px); */
-    visibility: hidden;
+    font-size: min(8vw, 5rem);
+    bottom: 0;
+    top: 0;
+    left: 85%;
+    text-shadow: 0 2px 4px rgb(67, 67, 67);
+    width: max-content;
+    max-width: none;
   }
 
   h2 {
@@ -459,6 +460,7 @@ footer > picture > img {
   }
 
   .non-mobile-bg-color-div {
+    width: 153.84%;
     left: calc(-28% + 6px);
     bottom: 50%;
   }
